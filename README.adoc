@@ -1,0 +1,5 @@
+= DeskOS: firefox-extension-htitle RPM
+
+This is the _firefox-extension-htitle_ RPM package for the *DeskOS* operating system.
+
+Upstream comes from https://addons.mozilla.org/es/firefox/addon/htitle/
