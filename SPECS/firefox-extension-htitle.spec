@@ -1,6 +1,6 @@
 Name:           firefox-extension-htitle
 Version:        3.4.1
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        HTitle extension for Firefox
 
 Group:          Applications/Internet
@@ -10,7 +10,6 @@ URL:            https://github.com/seleznev/firefox-extension-htitle
 # Signed XPI downloded from https://addons.mozilla.org/en-US/firefox/addon/htitle/
 Source0:        firefox-extension-htitle-3.4.1.xpi
 
-BuildArch:      noarch
 Requires:       firefox
 
 %description
@@ -25,5 +24,8 @@ cp -p %SOURCE0 $RPM_BUILD_ROOT/%{_libdir}/firefox/browser/extensions/\{c6448328-
 %{_libdir}/firefox/browser/extensions/*.xpi
 
 %changelog
+* Thu Dec 22 2016 Ricardo Arguello <rarguello@deskosproject.org> - 3.4.1-2
+- Removed BuildArch: noarch
+
 * Sat Dec 17 2016 Ricardo Arguello <rarguello@deskosproject.org> - 3.4.1-1
 - Initial release for DeskOS
